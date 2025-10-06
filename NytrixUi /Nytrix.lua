@@ -45,21 +45,29 @@ local assets = {
 	sliderhead = "rbxassetid://18772834246",
 }
 
---// Functions
-local function GetGui()
-	local newGui = Instance.new("ScreenGui")
-	newGui.ScreenInsets = Enum.ScreenInsets.None
-	newGui.ResetOnSpawn = false
-	newGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	newGui.DisplayOrder = 2147483647
+--// Mobile Detection
+local isMobile = UserInputService.TouchEnabled and not UserInputService.MouseEnabled
+local isConsole = UserInputService.GamepadEnabled and not UserInputService.MouseEnabled
 
-	local parent = RunService:IsStudio() 
-		and LocalPlayer:FindFirstChild("PlayerGui")
-		or (gethui and gethui())
-		or (cloneref and cloneref(nytrix.GetService("CoreGui")) or nytrix.GetService("CoreGui"))
+-local function GetGui()
+    local newGui = Instance.new("ScreenGui")
+    newGui.ScreenInsets = Enum.ScreenInsets.None
+    newGui.ResetOnSpawn = false
+    newGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    newGui.DisplayOrder = 2147483647
 
-	newGui.Parent = parent
-	return newGui
+    -- Add mobile support
+    if isMobile or isConsole then
+        newGui.Name = "NytrixMobile"
+    end
+
+    local parent = RunService:IsStudio() 
+        and LocalPlayer:FindFirstChild("PlayerGui")
+        or (gethui and gethui())
+        or (cloneref and cloneref(nytrix.GetService("CoreGui")) or nytrix.GetService("CoreGui"))
+
+    newGui.Parent = parent
+    return newGui
 end
 
 local function Tween(instance, tweeninfo, propertytable)
@@ -116,7 +124,23 @@ function nytrix:Window(Settings)
 	local baseUIScale = Instance.new("UIScale")
 	baseUIScale.Name = "BaseUIScale"
 	baseUIScale.Parent = base
-
+	
+local mobileLogo
+if isMobile or isConsole then
+    mobileLogo = Instance.new("ImageButton")
+    mobileLogo.Name = "MobileLogo"
+    mobileLogo.Image = "rbxassetid://12187365364" -- Use your logo asset ID
+    mobileLogo.BackgroundTransparency = 1
+    mobileLogo.Size = UDim2.fromOffset(50, 50)
+    mobileLogo.Position = UDim2.new(0, 20, 0, 20)
+    mobileLogo.ZIndex = 100
+    mobileLogo.Parent = Nytrix
+    
+    -- Initially hide the main UI on mobile
+    base.Visible = false
+    windowState = false
+end
+	
 	local baseUICorner = Instance.new("UICorner")
 	baseUICorner.Name = "BaseUICorner"
 	baseUICorner.CornerRadius = UDim.new(0, 10)
@@ -5878,3 +5902,4 @@ function nytrix:Demo()
 end
 
 return nytrix
+
