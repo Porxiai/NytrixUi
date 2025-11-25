@@ -3,9 +3,8 @@
 
 > [!IMPORTANT]
 > This is a copy of LinoriaLib. It is not the original LinoriaLib repository.  
-> NytrixLib is not for skidding… seriously, don’t do anything unless you know what you’re doing.  
+> Full credits to Linoria for the original work.
 > Original repository: [violin-suzutsuki/LinoriaLib](https://github.com/violin-suzutsuki/LinoriaLib)
-
 
 # Nytrix
 
