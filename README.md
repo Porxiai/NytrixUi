@@ -1,9 +1,9 @@
 
----
+----
 
 > [!IMPORTANT]
-> This is a copy of LinoriaLib. This is not the original LinoriaLib repository.<br />
-> NytrixLib is not for skidding… seriously, don’t do it 
+> This is a copy of LinoriaLib. This is not the original LinoriaLib repository.<br  />
+> NytrixLib is not for playing around… seriously, don’t do anything unless you understand what you doing
 > Original repository [violin-suzutsuki/LinoriaLib](https://github.#com/violin-suzutsuki/LinoriaLib)
 
 # Nytrix
