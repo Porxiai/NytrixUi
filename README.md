@@ -37,7 +37,6 @@ A Roblox UI library inspired by **Nytrix, Linoria, Porxiai**, and many other dev
 * Stefanuk: Extending library functionality.
 * matas3535: Creator of Splix.
 * RectangularObject: Fixing UI bugs, extending library functionality.
-## Lionria Contributors
 
 ## Nytrix Contributors
 
