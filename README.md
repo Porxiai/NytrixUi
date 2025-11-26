@@ -2,10 +2,7 @@
 ----
 
 > [!IMPORTANT]
-> This is a copy of LinoriaLib. It is not the original LinoriaLib repository.  
-> Full credits to Linoria for the original work.
-> Original repository: [violin-suzutsuki/LinoriaLib](https://github.com/violin-suzutsuki/LinoriaLib)
-
+This is a Uilib used only for Roblox — not for exploits. 🧢
 # Nytrix
 
 A Roblox UI library inspired by **Nytrix, Linoria, Porxiai**, and many other developers.
@@ -29,16 +26,7 @@ A Roblox UI library inspired by **Nytrix, Linoria, Porxiai**, and many other dev
 
 <img src="https://i.imgur.com/qs0Hqi6.png" />
 
-## Lionria Contributors
-
-* Inori: Main developer.
-* Wally: Cleaning up verbose code, extending library functionality.
-* mstudio45: Extending library functionality and adding resizing to the menu.
-* Stefanuk: Extending library functionality.
-* matas3535: Creator of Splix.
-* RectangularObject: Fixing UI bugs, extending library functionality.
-
-## Nytrix Contributors
+## Contributors
 
 * Porxiai: Main developer who created the IDE.
 * Mruptime: Coding the UI library, cleaning up verbose code, and extending library functionality.
