@@ -18,7 +18,7 @@ local Window = Library:CreateWindow({
 	-- Set Center to true if you want the menu to appear in the center
 	-- Set AutoShow to true if you want the menu to appear when it is created
 	-- Set Resizable to true if you want to have in-game resizable Window
-	-- Set ShowCustomCursor to false if you don't want to use the Linoria cursor
+	-- Set ShowCustomCursor to false if you don't want to use the Nytrix cursor
 	-- Set UnlockMouseWhileOpen to false if you don't want to unlock the mouse when the UI is toggled
 	-- NotifySide = Changes the side of the notifications (Left, Right) (Default value = Left)
 	-- Position and Size are also valid options here
