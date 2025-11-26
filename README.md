@@ -2,7 +2,7 @@
 ----
 
 > [!IMPORTANT]
-This is a Uilib used only for Roblox — not for exploits. 🧢
+This is a UiLib used only for Roblox — not for exploits. 🧢
 # Nytrix
 
 A Roblox UI library inspired by **Nytrix, Linoria, Porxiai**, and many other developers.
